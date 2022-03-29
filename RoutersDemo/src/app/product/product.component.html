@@ -1,0 +1,33 @@
+<button class="btn btn-warning" (click)="getAllProductsFromProductService()">
+  Get Data
+</button> &nbsp;
+
+<input type="number" [(ngModel)]="idForRouting" /> &nbsp;
+<button class="btn btn-success" (click)="routeFromNewProductOnId()">
+  Get Product With Id
+</button>
+<table class="table table-primary table-striped">
+    <thead class="thead dark">
+        <tr>
+            <th>PRODUCT ID</th>
+            <th>PRODUCT NAME</th>
+            <th>PRODUCT DESIGNATION</th>
+            <th>PRODUCT COST</th>
+            <th>ACTIONS</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let arrayObj of arrProductList">
+        <tr>
+            <td>{{ arrayObj.productId }}</td>
+            <td>{{ arrayObj.productName }}</td>
+            <td>{{ arrayObj.productDes }}</td>
+            <td>{{ arrayObj.cost }}</td>
+            <td>
+                <button type="button " class="btn btn-warning">edit</button>
+                <button type="button " class="btn btn-danger" value="Delete ">
+          delete
+        </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

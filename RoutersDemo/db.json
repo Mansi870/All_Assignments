@@ -1,0 +1,7 @@
+{
+    "loginDetails": [
+        { "uid": "Admin", "pwd": "Admin@123" },
+        { "uid": "Mansi", "pwd": "Mansi@123" },
+        { "uid": "A", "pwd": "A3" }
+    ]
+}

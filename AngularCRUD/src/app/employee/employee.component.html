@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>List of Empolyees</h2>
+    <a routerLink="employee/add/0" class="btn btn-primary mt-5 mb-5">Add Employee</a
+  >
+  <table class="table table-striped table-light">
+    <thead>
+      <th>Id</th>
+      <th>EmailID</th>
+      <th>Password</th>
+      <th>Phone NO.</th>
+      <th>Location</th>
+      <th>Designation</th>
+      <tr *ngFor="let emp of EmpolyeeArr">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.email }}</td>
+        <td>{{ emp.password }}</td>
+        <td>{{ emp.phone }}</td>
+        <td>{{ emp.location }}</td>
+        <td>{{ emp.design }}</td>
+        <td><a [routerLink]="['employee/Edit', emp.id]">Edit</a></td>
+    </tr>
+    </thead>
+    </table>
+</div>

@@ -1,0 +1,28 @@
+<table class="table table-striped table-light">
+    <thead class="thead-dark">
+        <tr>
+            <th>EMAIL</th>
+            <th>PASSWORD</th>
+            <th>PHONE</th>
+            <th>LOCATION</th>
+            <th>DESIGNATION</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let item of arrEmp">
+        <tr>
+            <td class="table-dark">{{ item.email }}</td>
+            <td class="table-dark">{{ item.password }}</td>
+            <td class="table-dark">{{ item.phone }}</td>
+            <td class="table-dark">{{ item.location }}</td>
+            <td class="table-dark">{{ item.design }}</td>
+            <td>
+                <button type="button" class="btn btn-warning">edit</button>
+                <button type="button" class="btn btn-danger" (click)="deleteData(item.id)" value="Delete">
+          delete
+        </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<input class="btn btn-primary" (click)="insertUser()" value="Insert User" /> &nbsp;
+<input class="btn btn-primary" (click)="UpdateUser()" value="Update User" />

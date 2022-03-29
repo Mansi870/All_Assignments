@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "email": "Mansimalik@gmail.com",
+      "password": "111",
+      "phone": "8700639766",
+      "location": "Uttar Pradesh",
+      "design": "Full Stack Developer",
+      "id": "1"
+    },
+    {
+      "email": "Yashchaudhary@gmail.com",
+      "password": "1111",
+      "phone": "000000000",
+      "location": "Uttar Pradesh",
+      "design": "Azure Developer",
+      "id": "2"
+    },
+    {
+      "email": "DeepikaBisht@gmail.com",
+      "password": "11111",
+      "phone": "000000000",
+      "location": "Rajasthan",
+      "design": "IOS Developer",
+      "id": "3"
+    },
+    {
+      "email": "Sarthak@gmail.com",
+      "password": "111111",
+      "phone": "000000000",
+      "location": "Haryana",
+      "design": "Business Analyst",
+      "id": "5"
+    },
+    {
+      "email": "Shrey@gmail.com",
+      "password": "111111",
+      "phone": "000000000",
+      "location": "Haryana",
+      "design": "Full Stack Developer",
+      "id": "7"
+    },
+    {
+      "email": "k@gmail.com",
+      "password": "1111",
+      "phone": "98979843",
+      "location": "Assam",
+      "design": "ASE",
+      "id": "8"
+    }
+  ]
+}

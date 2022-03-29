@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "../node_modules/bootstrap/dist/css/bootstrap.css";
+body {
+    background-image: url(./assets/rr.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+/* 
+.md-button {
+    padding: 0 6px 0 6px;
+    margin: 16px 18px 16px 28px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+} */

@@ -1,0 +1,31 @@
+<br /> &nbsp;
+<input class="btn btn-success" (click)="getAllEmployee()" value="Get All Employees" />&nbsp; &nbsp;
+
+<input type="text" [(ngModel)]="empId" />
+<input class="btn btn-primary" (click)="getEmployeeById()" value="Get Employee By ID" />
+<input class="btn btn-primary" (click)="insertEmployee()" value="Add Employee" style="margin-left: 100px" />
+
+<table class="table table-hover table-bordered">
+    <thead class="table table-dark table-striped">
+        <br />
+        <tr>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Designation</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let employee of arrEmployeesLst">
+        <tr>
+            <td>{{ employee.EmpId }}</td>
+            <td>{{ employee.Name }}</td>
+            <td>{{ employee.Dept }}</td>
+            <td>{{ employee.Designation }}</td>
+            <td>
+                <input type="button" class="btn btn-warning" (click)="updateEmployee()" value="Edit" />
+                <input type="button" class="btn btn-danger" (click)="deleteEmployee(employee.EmpId)" value="Delete" />
+            </td>
+        </tr>
+    </tbody>
+</table>

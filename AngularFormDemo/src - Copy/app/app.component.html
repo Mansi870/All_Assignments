@@ -1,0 +1,142 @@
+<div class="container">
+    <div class="card" style="
+      background-color: plum;
+      height: 380px;
+      width: 350px;
+      border: 10px solid black;
+    ">
+        <form>
+            <h2>LOGIN</h2>
+            <br /> User ID:<input type="text" id="uid" name="uid" [(ngModel)]="formUID" />
+            <br /> &nbsp; <br /> Passwaord:
+            <input type="text" id="pwd" name="pwd" [(ngModel)]="formPWD" />
+
+            <button class="btn btn-success mt-5 mb-5" (click)="loginForm1()">
+        Login
+      </button>
+        </form>
+        <form [formGroup]="loginFormReactive">
+            <h2>LOGIN</h2>
+            <br /> User ID:<input type="text" id="uidReactive" name="uidReactive" formControlName="uidReactive" />
+            <br /> &nbsp; <br /> Passwaord:
+            <input type="text" id="pwdReactive" name="pwdReactive" formControlName="pwdReactive" />
+
+            <button class="btn btn-success mt-5 mb-5" (click)="submitReactive()">
+        Login
+      </button>
+        </form>
+
+        <form [formGroup]="heroForm">
+            <h2>LOGIN</h2>
+            <div class="f-flex">
+                <br /> User ID:
+                <input type="text" id="uidReactive" formControlName="uidReactive" /><br />
+                <div *ngIf="
+            uidReactive?.invalid && (uidReactive?.dirty || uidReactive?.touched)
+          "></div>
+                <div *ngIf="uidReactive?.errors?.['required']">
+                    <h5>USER ID required</h5>
+                </div>
+                <div *ngIf="uidReactive?.errors?.['minlength']">
+                    <h5>USER ID must be at least 4 characters long</h5>
+                </div>
+            </div>
+            <br /> Password:
+            <input type="text" id="pwdReactive" formControlName="pwdReactive" /><br />
+            <div *ngIf="
+          pwdReactive?.invalid && (pwdReactive?.dirty || pwdReactive?.touched)
+        "></div>
+            <div *ngIf="pwdReactive?.errors?.['required']">
+                <h5>PASSWORD is required</h5>
+            </div>
+            <div *ngIf="pwdReactive?.errors?.['minlength']">
+                <h5>PASSWORD must be at least 4 characters long</h5>
+            </div>
+            <div *ngIf="pwdReactive?.errors?.['invalidPwd']">
+                <h5>PASSWORD must start with the word Admin</h5>
+            </div>
+            <button class="btn btn-success mt-5 mb-5" (click)="loginForm1()">
+        Login
+      </button>
+        </form>
+        <div class="f-flex">
+            <form>
+                <h2>REGISTER</h2>
+                <br /> User ID:<input type="text" id="uid" name="uid" [(ngModel)]="formUID" /> --> <br /> Email ID:
+                <input type="text" id="email" name="email" [(ngModel)]="formEMAIL" />
+                <br /> &nbsp; <br />Password:
+                <input type="password" id="pwd" name="pwd" [(ngModel)]="formPWD" />
+                <br /> &nbsp; <br /> Confirm PWD:
+                <input type="password" id="pwd" name="pwd" [(ngModel)]="formConfirm" />
+                <br />
+                <button class="btn btn-success mt-5 mb-5" (click)="loginForm1()">
+          Register
+        </button>
+            </form>
+        </div>
+        <!-- </form> -->
+
+        <form [formGroup]="loginFormReactive">
+            <h2>REGISTER</h2>
+            <br /> Email ID::<input type="text" id="uidReactive" name="uidReactive" formControlName="uidReactive" />
+            <br /> &nbsp; <br /> Password:
+            <input type="password" id="pwdReactive" name="pwdReactive" formControlName="pwdReactive" />
+            <br /> &nbsp; <br /> Confirm PWD:
+            <input type="password" id="confReactive" name="confReactive" formControlName="confReactive" />
+            <br />
+
+            <button class="btn btn-success mt-5 mb-5" (click)="submitReactive()">
+        Register
+      </button>
+        </form>
+
+        <form [formGroup]="heroForm">
+            <h2>REGISTER</h2>
+            <div class="f-flex">
+                <br /> EMAIL ID:
+                <input type="text" id="uidReactive" formControlName="uidReactive" /><br />
+                <div *ngIf="
+            uidReactive?.invalid && (uidReactive?.dirty || uidReactive?.touched)
+          "></div>
+                <div *ngIf="uidReactive?.errors?.['required']">
+                    <h5>USER ID required</h5>
+                </div>
+                <div *ngIf="uidReactive?.errors?.['minlength']">
+                    <h5>EMAIL ID should be end with .com</h5>
+                </div>
+            </div>
+            <br /> Password:
+            <input type="password" id="pwdReactive" formControlName="pwdReactive" /><br />
+            <div *ngIf="
+          pwdReactive?.invalid && (pwdReactive?.dirty || pwdReactive?.touched)
+        "></div>
+            <div *ngIf="pwdReactive?.errors?.['required']">
+                <h5>PASSWORD is required</h5>
+            </div>
+            <div *ngIf="pwdReactive?.errors?.['minlength']">
+                <h5>PASSWORD must be at least 4 characters long</h5>
+            </div>
+            <div *ngIf="pwdReactive?.errors?.['invalidPwd']">
+                <h5>PASSWORD must start with the word Admin</h5>
+            </div>
+            <br />Confirm PWD:
+            <input type="password" id="confReactive" formControlName="confReactive" /><br />
+            <div *ngIf="
+          confReactive?.invalid &&
+          (confReactive?.dirty || confReactive?.touched)
+        "></div>
+            <div *ngIf="confReactive?.errors?.['required']">
+                <h5>PASSWORD is required</h5>
+            </div>
+            <div *ngIf="confReactive?.errors?.['minlength']">
+                <h5>PASSWORD must be at least 4 characters long</h5>
+            </div>
+            <div *ngIf="confReactive?.errors?.['invalidPwd']">
+                <h5>PASSWORD must be same !!!</h5>
+            </div>
+            <button class="btn btn-success mt-5 mb-5" (click)="loginForm1()">
+        Register
+      </button>
+        </form>
+    </div>
+</div>

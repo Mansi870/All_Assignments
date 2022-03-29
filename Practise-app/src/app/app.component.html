@@ -1,0 +1,239 @@
+<!--<div class="card" style="width: 70rem">
+    <h3 style="text-align: center">Records</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>LOCATION</th>
+                <th>DESIGNATION</th>
+                <th>OPERATION</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let arrayObj of arrayDemo">
+            <tr>
+                <td>{{ arrayObj.Name }}</td>
+                <td>{{ arrayObj.location }}</td>
+                <td>{{ arrayObj.Designation }}</td>
+                <td>{{ arrayObj.id }}</td>
+                <td>
+                    <button type="button" class="btn btn-warning">edit</button>
+                    <button type="button" class="btn btn-danger" value="Delete" (click)="deleteRecord(arrayObj.id)">
+            delete
+          </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- <div [ngClass]="bCustomer == true ? 'admin' : 'student'">
+    <h2 style="text-align: center">Login</h2>
+    <br />
+    <form method="get">
+        ENTER ID:<input type="text" name="Uid" /><br /><br /> PASSWORD: <input type="text" name="pwd" /><br /><br />
+        <input type="button" class="btn btn-primary" value="SUBMIT" /> &nbsp;
+        <input type="reset" class="btn btn-primary" value="RESET" /><br /><br />
+    </form>
+    <input type="button" class="btn btn-warning" (click)="changeToAdmin()" value="CLICK FOR ADMIN" /> &nbsp;
+    <input type="button" class="btn btn-success" (click)="changeToStudent()" value="CLICK FOR STUDENT" /><br /><br />
+</div> -->
+
+<!-- <input type="button" class="btn btn-success" value="Login" (click)="Login()" />
+<input type="button" class="btn btn-success" value="Register" (click)="Register()" /> -->
+<!---<div class="card">
+    <div *ngIf="login == true">
+        <!-- <div [ngClass]="bCustomer == true ? 'admin' : 'student'"> -->
+<!--->
+<h2 style="text-align: center; color: aliceblue">Login</h2>
+<br />
+<form method="get">
+    ENTER ID:<input type="text" name="Uid" /><br /><br /> PASSWORD: <input type="text" name="pwd" /><br /><br />
+    <input type="button" class="btn btn-primary" value="SUBMIT" /> &nbsp;
+    <input type="reset" class="btn btn-primary" value="RESET" /><br /><br />
+</form>
+<input type="button" class="btn btn-warning" (click)="Register()" value="REGISTER" /> &nbsp;
+</div>
+</div>
+<div *ngIf="register == true">
+    <h2 style="text-align: center">Register</h2>
+    <br />
+    <form method="get">
+        Name:<input type="text" name="Name" /><br /><br /> PASSWORD: <input type="text" name="pwd" /><br /><br /> Phone No:<input type="text" name="phone" /><br /><br /> : Location:<input type="text" name="loc" /><br /><br /> Designation: <input type="text"
+            name="des" /><br />
+        <input type="button" class="btn btn-primary" value="SUBMIT" /> &nbsp;
+        <input type="reset" class="btn btn-primary" value="RESET" /><br /><br />
+    </form>
+    <input type="button" class="btn btn-warning" (click)="Login()" value="LOGIN" /> &nbsp;
+</div>-->
+<!-- <p appHighLight]>Hello.Welcome to Custom Directive</p> -->
+<!-- <div class="card-body" style="margin: 10px 60px 180px 150px">
+    <div class="RainbowDirective" style="color: aliceblue; font-size: 30px">
+        Enter Name:
+        <input type="text" appRainbow /> &nbsp;<br />
+        <br /> Enter Location:
+        <input type="text" appRainbow />
+    </div><div class="card-body" style="margin: 10px 60px 180px 150px">
+    <input type="number" [(ngModel)]="timeInSeconds" />&nbsp;
+    <input class="btn btn-primary" (click)="convertToMilli()" value="Display Text" />&nbsp;
+
+    <div *appDelay="timeInMillis">
+        <h2 style="color: purple">
+            Hi!! I am Mansi Malik! I am doing classwork for Custom Structural Directive........
+        </h2>
+    </div>
+</div>
+</div> -->
+<!--  -->
+
+<!-- <div class="card" style="
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 100px;
+    background-color: pink;
+  ">
+    <div class="card-body">
+        <hr style="border: 2px solid black" />
+        <h2 style="color: darkslategrey">Json Pipe</h2>
+        <hr style="border: 2px solid black" /> -->
+<!-- <input type="text" [(ngModel)]="strText" /><br /><br />
+        <h5>Original Data: {{ strText }} <br /><br /></h5>
+        <h5>Text in UPPER CASE: {{ strText | uppercase }}<br /><br /></h5>
+        <h5>Text in lower case: {{ strText | lowercase }}<br /><br /></h5> -->
+<!-- <input type="number" [(ngModel)]="iCurrency" /><br /><br />
+        <h5>Currency in USD: {{ iCurrency | currency: "USD" }} <br /><br /></h5>
+        <h5>Currency in Rupees: {{ iCurrency | currency: "Rs." }}<br /><br /></h5>
+        <h5>Currency in USD: {{ iCurrency | currency: "JPY" }}<br /><br /></h5> -->
+
+<!-- <h5>Today's Date: {{ currentDateInObj }}</h5>
+        <br />
+        <h5>Current date with Date Pipe: {{ currentDateInObj | date }}</h5>
+        <br />
+        <h5>Short with Date Pipe: {{ currentDateInObj | date: "short" }}</h5>
+        <br />
+        <h5>Medium with Date Pipe: {{ currentDateInObj | date: "medium" }}</h5>
+        <br />
+        <h5>Long with Date Pipe: {{ currentDateInObj | date: "long" }}</h5>
+        <br /> -->
+<!-- <h5>Original Data: {{ strForSlicing }} <br /><br /></h5>
+        <h5>
+            Sliced from 3rd position to 5th position : {{ strForSlicing | slice: 2:5 }} <br /><br />
+        </h5>
+        <h5>
+            Sliced from 2rd position to 9th position : {{ strForSlicing | slice: 1:10 }} <br /><br />
+        </h5>
+        <h5>
+            Sliced from 3rd position leaving last 3 characters: {{ strForSlicing | slice: 3:-3 }}<br /><br />
+        </h5>
+        <h5>
+            Sliced from 5rd position : {{ strForSlicing | slice: 4 }}<br /><br />
+        </h5>
+        <h5>
+            Sliced last 7rd position : {{ strForSlicing | slice: -7 }}<br /><br />
+        </h5> -->
+<!-- <h5>
+            Personal Details :{{ personData }}<br /> Personal Data using json pipe: {{ personData | json }}
+        </h5> -->
+<!-- <h5>Decimal Number : {{ DateInDecimal }}</h5>
+        <br />
+        <h5>
+            Using Decimal pipe with max of 2 digits: {{ DateInDecimal | number: "1.0-2" }}
+        </h5>
+        <br />
+        <h5>
+            Using Decimal pipe with max of 4 digits: {{ DateInDecimal | number: "1.0-4" }}
+        </h5>
+        <br />
+        <h5>
+            Using Number pipe with max of 6 digits: {{ DateInDecimal | number: "1.0-6" }}
+        </h5>
+        <br />
+        <h5>
+            Using Number pipe with max of 1 digits: {{ DateInDecimal | number: "1.0-1" }}
+        </h5>
+        <br /> -->
+<!-- </div>
+</div> -->
+<!-- <div class="card" style="width: 70rem; background-color: lightpink; margin-left: 100px"></div> -->
+
+<div class="container" style="background-color: lightsalmon; margin-left: 100px; margin-top: 40px">
+    <div class="card" style="width: 70rem; background-color: lightpink; margin-left: 100px">
+        <h2 class="section-title" style="text-align: center; color: white; background-color: black">
+            Product Details
+        </h2>
+        <!-- <form>
+        <div class="col-12">
+            <input type="text " id="productId" name="prodID " placeholder="Enter ID " #productId />&nbsp;
+            <input type="text " name="prodname " placeholder="Enter Name " #prodname />&nbsp;
+            <input type="text " name="prodDes " placeholder="Enter Designation " #prodDes />&nbsp;
+            <input type="text " name="Cost " placeholder="Enter Cost " #prodCost />&nbsp;
+            <button type="button " class="btn btn-primary" (click)="
+          getProductByAllFilters(
+            productId.value,
+            prodname.value,
+            prodDes.value,
+            prodCost.value
+          )
+        ">
+        Filter
+      </button> &nbsp; &nbsp;
+            <button class="btn btn-warning" (click)="getAllProductFromProductService()">
+        Get Data
+      </button> &nbsp;
+        </div>
+    </form> -->
+        <br /><br />
+        <table class="table table-primary table-striped">
+            <thead class="thead dark">
+                <tr>
+                    <th>PRODUCT ID</th>
+                    <th>PRODUCT NAME</th>
+                    <th>PRODUCT DESIGNATION</th>
+                    <th>PRODUCT COST</th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let arrayObj of arrEmp">
+                <tr>
+                    <td>{{ arrayObj.productId }}</td>
+                    <td>{{ arrayObj.productName }}</td>
+                    <td>{{ arrayObj.productDes }}</td>
+                    <td>{{ arrayObj.cost }}</td>
+                    <td>
+                        <button type="button " class="btn btn-warning">edit</button>
+                        <button type="button " class="btn btn-danger" value="Delete ">
+              delete
+            </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- <div class="card" style="width: 70rem; background-color: lightpink; margin-left: 100px">
+    <h2 style="text-align: center">Product Information</h2>
+    <table class="table table-striped table-light">
+        <thead class="thead dark">
+            <tr>
+                <th>PRODUCT ID</th>
+                <th>PRODUCT NAME</th>
+                <th>PRODUCT DESIGNATION</th>
+                <th>PRODUCT COST</th>
+                <th>OPERATION</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let arrayObj of arrEmp">
+            <tr>
+                <td>{{ arrayObj.productId }}</td>
+                <td>{{ arrayObj.productName }}</td>
+                <td>{{ arrayObj.productDes }}</td>
+                <td>{{ arrayObj.cost }}</td>
+                <td>
+                    <button type="button " class="btn btn-warning">edit</button>
+                    <button type="button " class="btn btn-danger" value="Delete ">
+            delete
+          </button>
+                </td>
+            </tr>
+        </tbody>
+    </table> -->

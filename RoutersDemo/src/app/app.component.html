@@ -1,0 +1,49 @@
+<nav class="navbar navbar-dark bg-dark mb-5">
+    <div class="container">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" routerLinkActive="active" routerLink="/about">About</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/product"
+          >Products</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/employee"
+          >Employee</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/contact"
+          >Contact US</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/customers1-"
+          >Customers1</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="/orders1"
+          >orders1</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          routerLinkActive="active"
+          [routerLink]="['/login']"
+          [queryParams]="{ uid: strUIDForLogin, pwd: strPWDForLogin }"
+          >Login</a
+        >
+      </li>
+
+      <button class="btn btn-success" (click)="login()">LOGIN</button>
+      &nbsp;
+      <button class="btn btn-success" (click)="logOut()">LOGOUT</button>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
